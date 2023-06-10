@@ -3,8 +3,8 @@ public:
     int coinChange(vector<int>& coins, int amount) 
     { vector<int>dp(amount+1,amount+1);
    dp[0]=0;
-   sort( begin(coins) , end(coins));
-   for( auto i=0 ;i<=amount ;i++)
+   //sort( begin(coins) , end(coins));
+   for( auto i=0 ;i<=amount ;i++) 
    {
        for( auto j=0 ; j<coins.size() ;j++)
        {
